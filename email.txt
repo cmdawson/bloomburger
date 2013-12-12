@@ -1,0 +1,23 @@
+Hi Emil - nice meeting you today. 
+
+Here are those links I thought might be useful for curve building (if you haven't seen them before).
+
+1) http://www.opengamma.com/downloads/interest-rate-instruments-and-market-conventions-guide.pdf
+
+This is a detailed reference for conventions on all the various instruments. It gets pretty ugly, see for example this thread on Wilmott http://www.wilmott.co.uk/messageview.cfm?catid=3&threadid=84994
+
+2) http://upetd.up.ac.za/thesis/submitted/etd-06262012-161357/unrestricted/dissertation.pdf
+
+A master's thesis on "Popular Methods for Constructing Yield Curves", has some interesting discussion. The monotonicity preserving splines stuff you already know about, but there is also a bit on parametric models which are used more by economists (Ivo would probably know about that).
+
+3) http://ftalphaville.ft.com/2010/08/23/323266/in-the-land-of-two-curves-and-one-price/
+
+Decent overview on the dual-curve bootstrapping that has been used since the bases went awry in 2008.
+
+I put the C++ stuff I mentioned up on github at https://github.com/cmdawson/bloomburger... Unfortunately the only copy I have left used some python-specific stuff for the data structure, and I had to re-translate it back into C++ from memory. It should compile OK but I haven't tested it live since I don't have a Bloomberg connection at present. 
+
+If nothing else it should at least give you a decent starting point for working with the API. There is a hopefully intelligible README included. Note it makes use of the boost c++ library which you should definitely look at if you don't already know it. The relevant Bloomberg includes and libs should already be on your system in C:\blp\api\v3 or something, if not they are available at e.g. http://www.openbloomberg.com/open-api/.
+
+KInd regards, whatever the outcome of this interview process please feel free to contact me anytime.
+
+Chris
